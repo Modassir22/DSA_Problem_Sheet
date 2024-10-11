@@ -3,7 +3,7 @@ public class DiagonalSum {
     public static int diagonalSum(int matrix[][]){
         int sum = 0;
         //bruite force
-        // for(int i=0 ; i<matrix.length ; i++){
+        // for(int i=0 ; i<matrix.length ; i++){  //O(n^2)
         //     for(int j=0 ; j<matrix[0].length ; j++){
         //         if(i==j){     //Primary Diagonal
         //             sum += matrix[i][j];
@@ -15,7 +15,7 @@ public class DiagonalSum {
         // }
 
         //Optimise code
-        for(int i=0 ; i<matrix.length ; i++){
+        for(int i=0 ; i<matrix.length ; i++){  //O(n)
             //Primary Diagonal
             sum += matrix[i][i];
 
